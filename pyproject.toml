@@ -5,14 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    # "demucs>=4.0.1",
+    "demucs>=4.0.1",
     "gradio>=6.27.0",
-    # "numpy>=2.5.2",
-    # "spaces>=0.51.3",
-    # "torch>=2.13.0",
-    # "torchcodec>=0.16.0",
-    # "tqdm>=4.70.0",
+    "numpy>=2.5.2",
+    "spaces>=0.51.3",
+    "torch>=2.13.0",
+    "torchcodec>=0.16.0",
+    "tqdm>=4.70.0",
 ]
-
-[project.scripts]
-start = "python app2.py"
