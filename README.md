@@ -10,6 +10,13 @@ background noise from vocals in video files. It can be used to clean up videos
 w/ vocals that have a lot of distracting noises (for instance, Microsoft Teams
 notifications).
 
+# How It Works
+Using the `demucs.api.Separator` class, video files are converted to tensors
+that get processed by the `HTDemucs` source separation model. The resulting
+vocals track is then re-encoded with the original video frames using
+`torchcodec.encoders.Encoder`. The result is a vocal track without background
+noise.
+
 # Usage
 First, [install uv](https://docs.astral.sh/uv/#installation)
 
